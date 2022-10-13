@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,900;1,200;1,300&family=Raleway:wght@200;500;600;900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="src/styles.css" rel="stylesheet" type="text/css" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/257a8011d1.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>wheather</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1></h1>
+      <form class="header" id="search-form">
+        <div class="panel p-3">
+          <div>
+            <label id="current-location" for="name">Kyiv, Ukraine</label><br />
+            <p id="current-temp"></p>
+          </div>
+          <div class="panel p-3 input-group">
+            <input
+              type="text"
+              name="name"
+              id="search-input"
+              required
+              placeholder="search"
+            />
+            <input type="submit" value="search" class="submit-input" />
+          </div>
+          <button>current</button>
+        </div>
+      </form>
+      <div class="row current">
+        <div class="card col-1" style="width: 18rem">
+          <div class="card-body">
+            <h2 id="current-city">Kyiv, city</h2>
+            <ul>
+              <li id="current-date"></li>
+              <li>Cloudy</li>
+              <li><i class="fa-solid fa-cloud"></i></li>
+              <li id="current-temperature">14°C</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col">
+          <h2></h2>
+          <ul>
+            <li>wind: 6 km/h</li>
+            <li>humidity: 48%</li>
+            <li>pressure: 1023 mb</li>
+          </ul>
+        </div>
+      </div>
+      <div class="row row-cols-xxl-6">
+        <div class="col center">
+          <ul>
+            <li>SAT</li>
+            <li><i class="fa-solid fa-cloud-sun"></i></li>
+            <li>18°C</li>
+          </ul>
+        </div>
+        <div class="col center">
+          <ul>
+            <li>SUN</li>
+            <li><i class="fa-solid fa-cloud-sun"></i></li>
+            <li>20°C</li>
+          </ul>
+        </div>
+        <div class="col center">
+          <ul>
+            <li>MON</li>
+            <li><i class="fa-solid fa-cloud"></i></li>
+            <li>20°C</li>
+          </ul>
+        </div>
+        <div class="col center">
+          <ul>
+            <li>TUE</li>
+            <li><i class="fa-solid fa-cloud-sun"></i></li>
+            <li>19°C</li>
+          </ul>
+        </div>
+        <div class="col center">
+          <ul>
+            <li>WED</li>
+            <li><i class="fa-solid fa-sun"></i></li>
+            <li>22°C</li>
+            -
+          </ul>
+        </div>
+        <div class="col center">
+          <ul>
+            <li>THU</li>
+            <li><i class="fa-solid fa-cloud"></i></li>
+            <li>19°C</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>

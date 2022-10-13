@@ -1,0 +1,51 @@
+.container {
+  padding: 15px 15px;
+  font-family: "Poppins", sans-serif;
+}
+
+label,
+#current-temp {
+  font-weight: 900;
+  color: white;
+  font-size: larger;
+}
+li {
+  list-style-type: none;
+}
+.header {
+  margin: 50px 0;
+  background-color: black;
+}
+.panel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+}
+
+.row {
+  margin: 20px 0;
+}
+.card {
+  margin-left: 12px;
+}
+.center {
+  text-align: center;
+}
+.card ul {
+  padding-left: 0;
+}
+
+button {
+  height: 30px;
+  width: 70px;
+  background-color: gray;
+}
+
+.input-group {
+  display: flex;
+  justify-content: flex-end;
+}
+.submit-input {
+  background-color: white;
+}
