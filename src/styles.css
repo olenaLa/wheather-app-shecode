@@ -1,20 +1,32 @@
 .container {
+  max-width: 600px;
+  margin: 20px auto;
   padding: 15px 15px;
   font-family: "Poppins", sans-serif;
+  border: 2px solid gray;
+  border-radius: 5px;
 }
 
-label,
+#current-city,
 #current-temp {
-  font-weight: 900;
+  font-weight: 700;
   color: white;
-  font-size: larger;
+  font-size: 24px;
+  margin: 0;
+}
+#current-temp {
+  font-size: 20px;
 }
 li {
   list-style-type: none;
 }
+li:first-letter {
+  text-transform: capitalize;
+}
 .header {
   margin: 50px 0;
   background-color: black;
+  border-radius: 5px;
 }
 .panel {
   display: flex;
@@ -52,4 +64,13 @@ button {
 .footer {
   text-align: center;
   margin-top: 100px;
+}
+.card-body ul {
+  margin: 0;
+}
+.units {
+  position: relative;
+  font-size: 10px;
+  top: -21px;
+  right: -15px;
 }

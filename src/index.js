@@ -40,7 +40,7 @@ function showSearchValues(event) {
   event.preventDefault();
   let searchInput = document.querySelector("#search-input");
 
-  let searchCity = document.querySelector("#current-city");
+  let searchCity = document.querySelector("#search-city");
   searchCity.innerHTML = `${searchInput.value}`;
   console.log(searchInput.value);
   let city = searchInput.value;
@@ -50,9 +50,16 @@ function showSearchValues(event) {
   function displayCity(response) {
     console.log(response);
     let temperature = Math.round(response.data.main.temp);
-    console.log(temperature);
-    let currentTemp = document.querySelector("#current-temperature");
-    currentTemp.innerHTML = `${temperature} °C`;
+    let searchTemp = document.querySelector("#search-temperature");
+    let searchDescription = document.querySelector("#description");
+    let searchHumidity = document.querySelector("#humidity");
+    let searchPressure = document.querySelector("#pressure");
+    let searchWind = document.querySelector("#wind");
+    searchTemp.innerHTML = `${temperature} °C`;
+    searchDescription.innerHTML = response.data.weather[0].description;
+    searchHumidity.innerHTML = response.data.main.humidity;
+    searchPressure.innerHTML = response.data.main.pressure;
+    searchWind.innerHTML = Math.round(response.data.wind.speed);
   }
 }
 let searchForm = document.querySelector("#search-form");
@@ -64,7 +71,7 @@ function displayWeather(response) {
   let temperature = Math.round(response.data.main.temp);
 
   console.log(`It is ${temperature} degrees`);
-  let currentLoc = document.querySelector("#current-location");
+  let currentLoc = document.querySelector("#current-city");
   let currentT = document.querySelector("#current-temp");
   currentLoc.innerHTML = `${response.data.name} `;
 
