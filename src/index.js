@@ -55,11 +55,17 @@ function showSearchValues(event) {
     let searchHumidity = document.querySelector("#humidity");
     let searchPressure = document.querySelector("#pressure");
     let searchWind = document.querySelector("#wind");
+    let searchIcon = document.querySelector("#icon");
     searchTemp.innerHTML = `${temperature} °C`;
     searchDescription.innerHTML = response.data.weather[0].description;
     searchHumidity.innerHTML = response.data.main.humidity;
     searchPressure.innerHTML = response.data.main.pressure;
     searchWind.innerHTML = Math.round(response.data.wind.speed);
+    searchIcon.setAttribute(
+      "src",
+      `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+    );
+    iconElement.setAttribute("alt", response.data.weather[0].description);
   }
 }
 let searchForm = document.querySelector("#search-form");
