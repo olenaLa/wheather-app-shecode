@@ -86,3 +86,11 @@ img {
 .additional-parameters {
   padding-top: 116px;
 }
+.units .active {
+  color: black;
+  cursor: default;
+}
+
+.units .active:hover {
+  text-decoration: none;
+}
