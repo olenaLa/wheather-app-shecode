@@ -90,7 +90,6 @@ img {
   color: black;
   cursor: default;
 }
-
-.units .active:hover {
+a {
   text-decoration: none;
 }
