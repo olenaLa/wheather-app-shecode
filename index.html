@@ -42,6 +42,7 @@
               id="search-input"
               required
               placeholder="search"
+              autocomplete="off"
             />
             <input type="submit" value="search" class="submit-input" />
           </div>
@@ -52,26 +53,29 @@
         <div class="card col-1" style="width: 18rem">
           <div class="card-body">
             <ul>
-              <li id="search-city">Kyiv, city</li>
+              <li id="search-city"></li>
               <li id="current-date"></li>
-              <li id="description">Cloudy</li>
+              <li id="description"></li>
               <li><img src="" alt="icon-weather" id="icon" /></li>
-              <li id="search-temperature">
-                14
-                <div class="units">°C|°F</div>
+              <li>
+                <strong id="search-temperature"></strong>
+                <div class="units">
+                  <a href="#" id="celsius-link" class="active">°C</a> |
+                  <a href="#" id="fahrenheit-link">°F</a>
+                </div>
               </li>
             </ul>
           </div>
         </div>
         <div class="col">
-          <ul>
+          <ul class="additional-parameters">
             <li>wind: <span id="wind">6</span> km/h</li>
             <li>humidity: <span id="humidity">74</span> %</li>
             <li>pressure: <span id="pressure">1023</span> mb</li>
           </ul>
         </div>
       </div>
-      <div class="row row-cols-xxl-6">
+      <!-- <div class="row row-cols-xxl-6">
         <div class="col center">
           <ul>
             <li>SAT</li>
@@ -105,7 +109,6 @@
             <li>WED</li>
             <li><i class="fa-solid fa-sun"></i></li>
             <li>22°C</li>
-            -
           </ul>
         </div>
         <div class="col center">
@@ -115,7 +118,7 @@
             <li>19°C</li>
           </ul>
         </div>
-      </div>
+      </div> -->
       <div class="footer">
         <a href="https://github.com/olenaLa/wheather-app-shecode"
           >open-sourced on GitHub</a

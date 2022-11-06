@@ -67,14 +67,22 @@ button {
 }
 .card-body ul {
   margin: 0;
+  font-size: 20px;
 }
 .units {
   position: relative;
   font-size: 10px;
-  top: -21px;
-  right: -15px;
+  top: -27px;
+  right: -27px;
 }
 img {
   height: 40px;
   width: 40px;
+}
+#search-city {
+  font-size: 25px;
+  font-weight: 500;
+}
+.additional-parameters {
+  padding-top: 116px;
 }
