@@ -17,36 +17,28 @@
       integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
       crossorigin="anonymous"
     />
-    <link href="src/styles.css" rel="stylesheet" type="text/css" />
 
     <script
       src="https://kit.fontawesome.com/257a8011d1.js"
       crossorigin="anonymous"
     ></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link href="src/styles.css" rel="stylesheet" type="text/css" />
     <title>wheather</title>
   </head>
   <body>
     <div class="container">
       <form class="header" id="search-form">
-        <div class="panel p-3">
-          <div id="current-location">
-            <h1 id="current-city" for="name">Kyiv, Ukraine</h1>
-            <br />
-            <p id="current-temp"></p>
-          </div>
-          <div class="panel p-3 input-group">
-            <input
-              type="text"
-              name="name"
-              id="search-input"
-              required
-              placeholder="search"
-              autocomplete="off"
-            />
-            <input type="submit" value="search" class="submit-input" />
-          </div>
-          <button>current</button>
+        <div class="panel p-3 input-group">
+          <input
+            type="text"
+            name="name"
+            id="search-input"
+            required
+            placeholder="  city"
+            autocomplete="off"
+          />
+          <input type="submit" value="search" class="submit-input" />
         </div>
       </form>
       <div class="row current">
@@ -56,7 +48,7 @@
               <li id="search-city"></li>
               <li id="current-date"></li>
               <li id="description"></li>
-              <li><img src="" alt="icon-weather" id="icon" /></li>
+              <li><img src="" id="icon" /></li>
               <li>
                 <strong id="search-temperature"></strong>
                 <div class="units">
@@ -75,54 +67,13 @@
           </ul>
         </div>
       </div>
-      <!-- <div class="row row-cols-xxl-6">
-        <div class="col center">
-          <ul>
-            <li>SAT</li>
-            <li><i class="fa-solid fa-cloud-sun"></i></li>
-            <li>18°C</li>
-          </ul>
+      <div class="weather-forecast" id="forecast"></div>
+      <div class="col center">
+        <div class="footer">
+          <a href="https://github.com/olenaLa/wheather-app-shecode"
+            >open-sourced on GitHub</a
+          >
         </div>
-        <div class="col center">
-          <ul>
-            <li>SUN</li>
-            <li><i class="fa-solid fa-cloud-sun"></i></li>
-            <li>20°C</li>
-          </ul>
-        </div>
-        <div class="col center">
-          <ul>
-            <li>MON</li>
-            <li><i class="fa-solid fa-cloud"></i></li>
-            <li>20°C</li>
-          </ul>
-        </div>
-        <div class="col center">
-          <ul>
-            <li>TUE</li>
-            <li><i class="fa-solid fa-cloud-sun"></i></li>
-            <li>19°C</li>
-          </ul>
-        </div>
-        <div class="col center">
-          <ul>
-            <li>WED</li>
-            <li><i class="fa-solid fa-sun"></i></li>
-            <li>22°C</li>
-          </ul>
-        </div>
-        <div class="col center">
-          <ul>
-            <li>THU</li>
-            <li><i class="fa-solid fa-cloud"></i></li>
-            <li>19°C</li>
-          </ul>
-        </div>
-      </div> -->
-      <div class="footer">
-        <a href="https://github.com/olenaLa/wheather-app-shecode"
-          >open-sourced on GitHub</a
-        >
       </div>
     </div>
     <script src="src/index.js"></script>

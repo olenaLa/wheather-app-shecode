@@ -3,20 +3,10 @@
   margin: 20px auto;
   padding: 15px 15px;
   font-family: "Poppins", sans-serif;
-  border: 2px solid gray;
+  border: 2px solid #ec6e4c;
   border-radius: 5px;
 }
 
-#current-city,
-#current-temp {
-  font-weight: 700;
-  color: white;
-  font-size: 24px;
-  margin: 0;
-}
-#current-temp {
-  font-size: 20px;
-}
 li {
   list-style-type: none;
 }
@@ -26,7 +16,7 @@ li:first-letter {
 .header {
   margin: 50px 0;
   background-color: black;
-  border-radius: 5px;
+  border-radius: 30px;
 }
 .panel {
   display: flex;
@@ -48,18 +38,17 @@ li:first-letter {
   padding-left: 0;
 }
 
-button {
-  height: 30px;
-  width: 70px;
-  background-color: gray;
-}
-
 .input-group {
   display: flex;
   justify-content: flex-end;
 }
+input {
+  border-radius: 30px;
+}
+
 .submit-input {
   background-color: white;
+  border-radius: 30px;
 }
 .footer {
   text-align: center;
@@ -76,12 +65,16 @@ button {
   right: -27px;
 }
 img {
-  height: 40px;
-  width: 40px;
+  height: 60px;
+  width: 60px;
 }
 #search-city {
   font-size: 25px;
-  font-weight: 500;
+  font-weight: 600;
+}
+#search-temperature {
+  padding-left: 10px;
+  font-size: 35px;
 }
 .additional-parameters {
   padding-top: 116px;
@@ -92,4 +85,21 @@ img {
 }
 a {
   text-decoration: none;
+}
+.weather-forecast {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.weather-forecast-date {
+  font-size: 16px;
+  opacity: 0.5;
+}
+
+.weather-forecast-temperature-min {
+  opacity: 0.5;
+}
+
+.weather-forecast-temperatures {
+  font-size: 13px;
 }
