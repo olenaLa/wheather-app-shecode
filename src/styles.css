@@ -4,7 +4,7 @@
   padding: 15px 15px;
   font-family: "Poppins", sans-serif;
   border: 2px solid #ec6e4c;
-  border-radius: 5px;
+  border-radius: 50px;
 }
 
 li {
@@ -41,14 +41,20 @@ li:first-letter {
 .input-group {
   display: flex;
   justify-content: flex-end;
+ 
 }
 input {
-  border-radius: 30px;
+  border-radius: 20px;
+
+  
 }
 
 .submit-input {
   background-color: white;
-  border-radius: 30px;
+  border-radius: 20px;
+  padding-right: 10px;
+
+  
 }
 .footer {
   text-align: center;
@@ -103,3 +109,24 @@ a {
 .weather-forecast-temperatures {
   font-size: 13px;
 }
+/* test */
+
+
+#search-input{
+  padding-left: 20px;
+  padding-right: 20px;
+  color: 48484a;
+  border: 0px;
+  
+}
+
+#search-input::placeholder {
+  padding-left: 25px;
+  background-image: url('../images/icons8-search.svg');
+  background-size: 12%;
+  background-repeat: no-repeat;
+  background-position: left center;
+  color: #909294;
+}
+ 
+ 

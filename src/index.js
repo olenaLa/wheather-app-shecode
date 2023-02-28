@@ -141,3 +141,11 @@ let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
 searchValues("Kyiv");
+
+const searchIcon = document.querySelector('.search-icon-test');
+searchIcon.addEventListener('click', search);
+
+function search() {
+  const searchTerm = document.querySelector('.search-input-test').value;
+
+}
