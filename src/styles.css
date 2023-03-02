@@ -1,3 +1,12 @@
+html, body{
+  min-height: 100%;
+}
+body {
+  background: linear-gradient(99.6deg, rgb(144, 146, 148) 10.6%, rgb(242, 227, 234) 32.9%, rgb(236, 110, 76) 52.7%, rgb(220, 227, 239) 72.8%, rgb(185, 205, 227) 81.1%, rgb(144, 146, 148) 102.4%);
+  background-repeat: no-repeat;
+  
+}
+
 .container {
   max-width: 600px;
   margin: 20px auto;
@@ -5,6 +14,8 @@
   font-family: "Poppins", sans-serif;
   border: 2px solid #ec6e4c;
   border-radius: 50px;
+  background: white;
+  
 }
 
 li {
@@ -46,16 +57,21 @@ li:first-letter {
 input {
   border-radius: 20px;
 
-  
 }
 
 .submit-input {
   background-color: white;
   border-radius: 20px;
   padding-right: 10px;
-
+  color: black;
   
 }
+
+.submit-input:active {
+  background-color: black;
+  color: white;
+}
+
 .footer {
   text-align: center;
   margin-top: 100px;
