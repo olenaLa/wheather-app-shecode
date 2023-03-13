@@ -25,15 +25,19 @@ li:first-letter {
   text-transform: capitalize;
 }
 .header {
-  margin: 50px 0;
-  background-color: black;
+  margin: 30px 0;
+
   border-radius: 30px;
 }
+#search-form{
+  padding: 0;
+}
+
 .panel {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px;
+  
 }
 
 .row {
@@ -41,6 +45,7 @@ li:first-letter {
 }
 .card {
   margin-left: 12px;
+  border-radius: 20px;
 }
 .center {
   text-align: center;
@@ -50,15 +55,15 @@ li:first-letter {
 }
 
 .input-group {
-  display: flex;
-  justify-content: flex-end;
- 
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+  width: 40px;
 }
 input {
   border-radius: 20px;
 
 }
-
 .submit-input {
   background-color: white;
   border-radius: 20px;
@@ -82,22 +87,27 @@ input {
 }
 .units {
   position: relative;
-  font-size: 10px;
-  top: -27px;
-  right: -27px;
+  font-size: 15px;
+  top: -31px;
+  right: -50px;
 }
 img {
   height: 60px;
   width: 60px;
 }
 #search-city {
-  font-size: 25px;
+  font-size: 35px;
   font-weight: 600;
 }
 #search-temperature {
-  padding-left: 10px;
+  padding-left: 5px;
   font-size: 35px;
 }
+
+.current .col{
+  width: 50%;
+}
+
 .additional-parameters {
   padding-top: 116px;
 }
@@ -132,7 +142,8 @@ a {
   padding-left: 20px;
   padding-right: 20px;
   color: 48484a;
-  border: 0px;
+  border: 1px;
+  
   
 }
 
