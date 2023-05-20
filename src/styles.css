@@ -10,11 +10,11 @@ body {
 .container {
   max-width: 600px;
   margin: 20px auto;
-  padding: 15px 15px;
+  padding: 50px 50px;
   font-family: "Poppins", sans-serif;
   border: 2px solid #ec6e4c;
   border-radius: 50px;
-  background: white;
+  background: rgba(255, 255, 255, 0.97);
   
 }
 
@@ -114,53 +114,98 @@ a {
 }
 
 
- /* style for the input group */
  .input-group {
    display: flex;
    align-items: center;
    background-color: #f2f2f2;
    border-radius: 50px;
-   padding: 12px;
- }
 
- /* style for the search input */
- #search-input {
+ } 
+
+  #search-input {
    border: none;
    background-color: transparent;
    flex: 1;
    font-size: 16px;
-   padding-left: 15px;
+   padding-left:10px;
    padding-right: 15px;
    height: 30px;
   
  }
 
- #search-input::placeholder {
-   padding-left: 25px;
-   background-image: url('../images/icons8-search.svg');
-   background-size: 10%;
-   background-repeat: no-repeat;
-   background-position: left center;
-   color: #909294;
+#search-input {
+  padding-left: 40px;
+  background-image: url('../images/icons8-search.svg');
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  color: #909294;
+}
+
+#search-input:focus {
+  outline: none;
+  color: #909294;
+}
+
+#search-input:focus::placeholder {
+  color: #909294;
+}
+#search-input:focus,
+.submit-input:focus {
+  outline: none;
+  
+}
+
+.input-group:focus-within {
+  box-shadow: 0 0 0 2px rgba(144, 146, 148, 0.5);
+} 
+
+#search-input:focus {
+  box-shadow: none !important;
+  outline: none !important;
+}
+.form-control:focus {
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+
+ .btn-primary {
+  border-radius: 50px;
+  height: 54px !important;
+  padding-right: 30px;
+  padding-left: 30px;
  }
 
- /* style for the search button */
- .submit-input {
-   border: none;
+ .input-group {
+   display: flex;
+   align-items: center;
+   background-color: #f2f2f2;
    border-radius: 50px;
-   padding: 10px 20px;
+ }
+
+ .input-group-append {
+   display: flex;
+   align-items: center;
+   height: 100%;
+   
+ }
+
+ .input-group-append button.btn-primary {
    background-color: #f2f2f2;
    color: black;
-   font-size: 16px;
-  border-top-left-radius: 50px;
+   border: none;
+   line-height: 1;
+   height: 100%;
+   transition: background-color 0.3s ease;
  }
 
- .submit-input:active {
+ .input-group-append button.btn-primary:hover {
    background-color: black;
    color: white;
- }
- /* style for the focused search button */
- .submit-input:focus {
-   border: none;
-   box-shadow: 0 0 0 2px rgba(144,146,148, 0.5);
- }
+ } 
+.input-group-append button.btn-primary:active {
+  background-color: #555555;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transform: scale(0.95);
+}
